@@ -113,6 +113,7 @@ main {
         color: white;
         text-transform: uppercase;
         font-size: 4rem;
+        letter-spacing: 0.2rem;
         position: relative;
         top: 50%;
         width: 40%;
@@ -165,9 +166,12 @@ section.second {
             > h2 {
                 text-transform: uppercase;
                 font-size: 2.5rem;
+                letter-spacing: 0.3rem;
             }
             > p {
                 color: hsl(0, 0%, 55%);
+                font-size: 0.8rem;
+                font-weight: bold;
             }
         }
     }
@@ -312,6 +316,13 @@ footer {
             @include flex(column);
             gap: 2rem;
         }
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                font-weight: bold;
+            }
+        }
         .icons {
             @include flex();
             align-self: end;
@@ -336,6 +347,8 @@ footer {
     }
     p {
         color: hsl(0, 0%, 41%);
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 }
 
@@ -353,7 +366,7 @@ footer {
                 align-self: center;
             }
         }
-        nav {
+        nav.desktop {
             margin: 2rem;
             ul {
                 display: flex;
